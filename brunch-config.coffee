@@ -12,7 +12,8 @@ exports.config =
         'js/vendor.js': /^(vendor|bower_components(?![\\/]jquery[\\/]dist[\\/]jquery.js))/
     stylesheets:
       joinTo:
-        'css/app.css': /^(app[\\/]scss|vendor)/
+        'css/app.css': /^(app[\\/]scss)/
+        'css/vendor.css': /^(vendor)/
 
   modules:
     wrapper: false

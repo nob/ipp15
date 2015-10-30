@@ -1,0 +1,16 @@
+<div class="modal fade" id="modal-{{@key}}-twb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog ipp-modal" role="document">
+    <!-- Modal close button for TwtBootstrap modal -->
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="ipp-modal-content" id="modal-{{@key}}">
+      <!-- Start HTML which used in both Adaptive-modal and TwtBootstrap modal -->
+      <div lang="en">
+        {{> (lookup . 'en') }}
+      </div>
+      <div lang="ja">
+        {{> (lookup . 'ja') }}
+      </div>
+      <!-- End HTML which used in both Adaptive-modal and TwtBootstrap modal -->
+    </div>
+  </div>
+</div>

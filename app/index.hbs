@@ -2,11 +2,106 @@
 _options:
   layout: app/layouts/layout.hbs
   partials:
-    - app/partials/buttons.hbs
-title: Starter Template
+    - app/partials/modal.hbs
+    - app/partials/yakitori.en.md
+    - app/partials/yakitori.ja.md
+    - app/partials/soba.en.md
+    - app/partials/soba.ja.md
+    - app/partials/contact.en.md
+    - app/partials/contact.ja.md
+    - app/partials/location.en.md
+    - app/partials/location.ja.md
+    - app/partials/reservations.en.md
+    - app/partials/reservations.ja.md
+    - app/partials/menu.en.md
+    - app/partials/menu.ja.md
+    - app/partials/factoids.en.md
+    - app/partials/factoids.ja.md
+
+title: Ippuku
+
+modal_contents:
+  yakitori:
+    en: yakitori.en
+    ja: yakitori.ja
+  soba:
+    en: soba.en
+    ja: soba.ja
+  contact:
+    en: contact.en
+    ja: contact.ja
+  location:
+    en: location.en
+    ja: location.ja
+  reservations:
+    en: reservations.en
+    ja: reservations.ja
+  menu:
+    en: menu.en
+    ja: menu.ja
+  factroids:
+    en: factoids.en
+    ja: factoids.ja
 ---
-<h1 class="cover-heading">Have brown rice for brunch.<br/>No coffee.</h1>
-<div class="lead">
-  <p>Brunch skeleton for simple static pages, with Bootstrap & jQuery</p>
-  <p class="lead">{{> buttons}}</p>
+<img src="/pola/9.jpg" alt="" class="pitem" />
+<div id="pola_board">
+  <a href="#modal1" class="pitem" data-am-custom-class="ipp-modal">
+    <img src="/pola/1.jpg" alt="" class="" />
+  </a>
+  <img src="/pola/2.jpg" alt="" class="pitem" />
+  <img src="/pola/3.jpg" alt="" class="pitem" />
+  <img src="/pola/4.jpg" alt="" class="pitem" />
+  <img src="/pola/5.jpg" alt="" class="pitem" />
+  <img src="/pola/6.jpg" alt="" class="pitem" />
+  <img src="/pola/7.jpg" alt="" class="pitem" />
+  <img src="/pola/8.jpg" alt="" class="pitem" />
+  <img src="/pola/10.jpg" alt="" class="pitem" />
+  <img src="/pola/11.jpg" alt="" class="pitem" />
+  <img src="/pola/12.jpg" alt="" class="pitem" />
+  <img src="/pola/13.jpg" alt="" class="pitem" />
+  <img src="/pola/14.jpg" alt="" class="pitem" />
+  <img src="/pola/15.jpg" alt="" class="pitem" />
+  <img src="/pola/16.jpg" alt="" class="pitem" />
+  <img src="/pola/17.jpg" alt="" class="pitem" />
+  <img src="/pola/18.jpg" alt="" class="pitem" />
+  <img src="/pola/19.jpg" alt="" class="pitem" />
+  <img src="/pola/20.jpg" alt="" class="pitem" />
+  <img src="/pola/21.jpg" alt="" class="pitem" />
+  <img src="/pola/22.jpg" alt="" class="pitem" />
+  <img src="/pola/23.jpg" alt="" class="pitem" />
+  <img src="/pola/24.jpg" alt="" class="pitem" />
+  <img src="/pola/25.jpg" alt="" class="pitem" />
+  <img src="/pola/26.jpg" alt="" class="pitem" />
+  <img src="/pola/27.jpg" alt="" class="pitem" />
+  <img src="/pola/28.jpg" alt="" class="pitem" />
+  <img src="/pola/29.jpg" alt="" class="pitem" />
+  <img src="/pola/30.jpg" alt="" class="pitem" />
+  <img src="/pola/31.jpg" alt="" class="pitem" />
+  <img src="/pola/32.jpg" alt="" class="pitem" />
+  <img src="/pola/33.jpg" alt="" class="pitem" />
+  <img src="/pola/34.jpg" alt="" class="pitem" />
+  <img src="/pola/35.jpg" alt="" class="pitem" />
+  <img src="/pola/36.jpg" alt="" class="pitem" />
+  <img src="/pola/37.jpg" alt="" class="pitem" />
+  <img src="/pola/38.jpg" alt="" class="pitem" />
+  <img src="/pola/39.jpg" alt="" class="pitem" />
+  <img src="/pola/40.jpg" alt="" class="pitem" />
+  <img src="/pola/41.jpg" alt="" class="pitem" />
+  <img src="/pola/42.jpg" alt="" class="pitem" />
+  <img src="/pola/43.jpg" alt="" class="pitem" />
+  <img src="/pola/44.jpg" alt="" class="pitem" />
+  <img src="/pola/45.jpg" alt="" class="pitem" />
+  <img src="/pola/46.jpg" alt="" class="pitem" />
+  <img src="/pola/47.jpg" alt="" class="pitem" />
+  <img src="/pola/48.jpg" alt="" class="pitem" />
+  <img src="/pola/49.jpg" alt="" class="pitem" />
+  <img src="/pola/50.jpg" alt="" class="pitem" />
+  <img src="/pola/51.jpg" alt="" class="pitem" />
+  <img src="/pola/52.jpg" alt="" class="pitem" />
+  <img src="/pola/53.jpg" alt="" class="pitem" />
+  <img src="/pola/54.jpg" alt="" class="pitem" />
+  <img src="/pola/55.jpg" alt="" class="pitem" />
 </div>
+{{#each modal_contents}}
+  {{> modal}}
+{{/each}}

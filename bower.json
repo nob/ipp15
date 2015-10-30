@@ -14,7 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.11.1",
+    "jquery": "latest",
     "bootstrap-sass-official": "latest"
   }
 }

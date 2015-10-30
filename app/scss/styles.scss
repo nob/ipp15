@@ -2,3 +2,40 @@
 @import "_variables";
 @import "bootstrap";
 //@import "compass";
+body {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../images/swirl_pattern.png);
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%;
+}
+.site-wrapper {
+  width: 100%;
+  #pola_board {
+    width: 960px;
+    margin: 0px auto;
+    .pitem {
+      width: 24%;
+      border: solid 1px grey;
+      background-color: #E8704E; //This will become BG color of AdaptiveModal.
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//For AdaptiveModal & TwtBootstrap Modal
+.ipp-modal {
+  width: 80%;
+  height: 60%;
+  ipp-modal-header {
+
+  }
+  ipp-modal-body {
+
+  }
+}
+//For AdaptiveModal
+.am-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+}
