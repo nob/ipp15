@@ -17,7 +17,7 @@
       // IE(even in IE11) can't handle CSS3 3D Transforms correctly. Use TwtBootstrap Modal.
       $('a.pitem').click(function() {
         $('#ipp-modal').css('backgroundColor', $(this).css('backgroundColor'));
-        $('#modal1-twb').modal('show');
+        $($(this).attr('href') + '-twb').modal('show');
       });
     }
 
