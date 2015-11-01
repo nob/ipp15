@@ -8,8 +8,25 @@ body {
   // background-repeat: no-repeat;
   // background-size: 100% 100%;
 }
+//AdaptiveModal default style overwrite.
+.am-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .site-wrapper {
   width: 100%;
+  h1 {
+    position: absolute;
+    @include rotate(-25deg);
+    width: 300px;
+    top: -120px;
+    left: -20px;
+    z-index: 100;
+    img {
+      width: 100%;
+    }
+
+  }
   #pola_board {
     width: 960px;
     margin: 0px auto;
@@ -22,20 +39,9 @@ body {
       }
     }
   }
-}
-
-//For AdaptiveModal & TwtBootstrap Modal
-.ipp-modal {
-  width: 80%;
-  height: 60%;
-  ipp-modal-header {
-
+  //For AdaptiveModal & TwtBootstrap Modal
+  .ipp-modal {
+    width: 80%;
+    height: 60%;
   }
-  ipp-modal-body {
-
-  }
-}
-//For AdaptiveModal
-.am-overlay {
-  background-color: rgba(255, 255, 255, 0.7);
 }
