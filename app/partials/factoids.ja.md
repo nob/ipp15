@@ -1,1 +1,1 @@
-FFFFF
+## Factioids(ja)
