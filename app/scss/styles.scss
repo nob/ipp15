@@ -2,6 +2,10 @@
 @import "_variables";
 @import "bootstrap";
 //@import "compass";
+
+//Font from Google fonts
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
 body {
   background-color: rgba(0, 0, 0, 0);
   background-image: url(../images/swirl_pattern.png);
@@ -25,17 +29,26 @@ body {
     img {
       width: 100%;
     }
-
   }
   #pola_board {
-    width: 960px;
+    width: 800px;
     margin: 0px auto;
     .pitem {
-      width: 24%;
+      width: 230px;
       border: solid 1px grey;
       background-color: #E8704E; //This will become BG color of AdaptiveModal.
       img {
         width: 100%;
+      }
+      .menu-title {
+        margin-bottom: 0px;
+        position: absolute;
+        bottom: 60px;
+        left: 40px;
+        @include rotate(-25deg);
+        font-size: 40px;
+        color: red;
+        font-family: 'Permanent Marker', cursive;
       }
     }
   }
