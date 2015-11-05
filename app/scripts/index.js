@@ -29,4 +29,16 @@
       });
     }
 
+    //hover effect which can't handle only css.
+    $('a.pitem .menu-title').hover(function(){
+      $(this).prev().css('opacity', '0.7');
+    }, function(){
+      $(this).prev().css('opacity', '0');
+    });
+    $('a.pitem .overlay').hover(function(){
+      $(this).css('opacity', '0.7');
+    }, function(){
+      $(this).css('opacity', '0');
+    });
+
 })(window.jQuery);

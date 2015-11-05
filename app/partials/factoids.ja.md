@@ -1,1 +1,1 @@
-## Factioids(ja)
+## Factoids(ja)

@@ -5,6 +5,53 @@
 
 //Font from Google fonts
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+// @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css?family=Rancho);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+
+/**
+ * Keyframe animation.
+ */
+@mixin keyf($animation-name) {
+  @-webkit-keyframes aaaa {
+    @content;
+  }
+  @-moz-keyframes aaaa {
+    @content;
+  }
+  @keyframes aaaa {
+    @content;
+  }
+}
+@mixin animation($animation-name) {
+  -webkit-animation: $animation-name;
+  -moz-animation: $animation-name;
+  animation: $animation-name;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@include keyf(aaaa){
+  0% {
+      @include rotate(0deg);
+  }
+  25% {
+      @include rotate(-10deg);
+  }
+  100% {
+      @include rotate(0deg);
+  }
+}
+@for $i from 1 through 7 {
+  $DELAY: $i * 0.5s;
+  #pola_board a:nth-of-type(#{8 - $i}){
+  // #pola_board a {
+      @include animation(aaaa 1s ease $DELAY infinite alternate);
+  }
+}
+
+
 
 body {
   background-color: rgba(0, 0, 0, 0);
@@ -12,9 +59,37 @@ body {
   // background-repeat: no-repeat;
   // background-size: 100% 100%;
 }
-//AdaptiveModal default style overwrite.
-.am-overlay {
+
+//For AdaptiveModal & TwtBootstrap Modal
+.am-overlay, .modal {
   background-color: rgba(255, 255, 255, 0.7);
+  .am-back, .modal-dialog {
+    background-image: url(../images/denim.png) !important;
+  }
+  .am-modal-content, .ipp-modal-content {
+    padding: 20px 30px 20px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    div[lang=en] {
+      font-size: 20px;
+      font-family: 'Rancho', cursive;
+      h2 {
+        font-family: 'Rancho', cursive;
+      }
+    }
+    div[lang=ja] {
+      h2 {
+        font-size: 22px;
+        font-family: 'Noto Sans Japanese', cursive;
+      }
+    }
+  }
+}
+.ipp-modal {
+  top: 100px !important;
+  width: 80%;
+  height: 60%;
 }
 
 .site-wrapper {
@@ -34,11 +109,29 @@ body {
     width: 800px;
     margin: 0px auto;
     .pitem {
+      @include transform-origin(50% 9%);
       width: 230px;
       border: solid 1px grey;
-      background-color: #E8704E; //This will become BG color of AdaptiveModal.
+      background-color: rgba(0, 0, 0, 0); //This will become BG color of AdaptiveModal.
       img {
         width: 100%;
+        position: relative;
+        z-index: 1;
+        + .overlay {
+          display: block;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgb(255, 255, 255);
+          opacity: 0;
+          border: solid 1px blue;
+          z-index: 2;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
       }
       .menu-title {
         margin-bottom: 0px;
@@ -49,12 +142,8 @@ body {
         font-size: 50px;
         color: #1063E8;
         font-family: 'Permanent Marker', cursive;
+        z-index: 3;
       }
     }
-  }
-  //For AdaptiveModal & TwtBootstrap Modal
-  .ipp-modal {
-    width: 80%;
-    height: 60%;
   }
 }
