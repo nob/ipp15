@@ -13,12 +13,17 @@
       //CSS3 3D effect can be used. initialize Adaptive Modal and use it!
       $('a.pitem').adaptiveModal({
         beforeAnimate: function(el, status) {
-          //avoid menu-title is loose it's style and been shown in bottom of the flipping card.
-          if(status == 'open') el.children('.menu-title').css('display', 'none');
+          if(status == 'open') {
+            //avoid menu-title is loose it's style and been shown in bottom of the flipping card.
+            el.children('.menu-title').css('display', 'none');
+          }
         },
         afterAnimate: function(el, status) {
-          //put the menu-title back to original state after animation.
-          if (status == 'open') el.children('.menu-title').css('display', 'block');
+          if (status == 'open') {
+            //put the menu-title back to original state after animation.
+            el.children('.menu-title').css('display', 'block');
+            $('.am-modal').css('top', '100px');
+          }
         }
       });
     } else {
