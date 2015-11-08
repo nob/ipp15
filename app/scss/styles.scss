@@ -14,13 +14,13 @@
  * Keyframe animation.
  */
 @mixin keyf($animation-name) {
-  @-webkit-keyframes aaaa {
+  @-webkit-keyframes swing {
     @content;
   }
-  @-moz-keyframes aaaa {
+  @-moz-keyframes swing {
     @content;
   }
-  @keyframes aaaa {
+  @keyframes swing {
     @content;
   }
 }
@@ -32,7 +32,7 @@
   -moz-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@include keyf(aaaa){
+@include keyf(swing){
   0% {
       @include rotate(0deg);
   }
@@ -47,7 +47,7 @@
   $DELAY: $i * 0.5s;
   #pola_board a:nth-of-type(#{8 - $i}){
   // #pola_board a {
-      @include animation(aaaa 1s ease $DELAY infinite alternate);
+      @include animation(swing 1s ease $DELAY infinite alternate);
   }
 }
 
