@@ -47,8 +47,11 @@ modal_contents:
   <img src="/pola/9.jpg" alt="{{title}}"/>
 </h1>
 <div id="pola_board">
-  {{!-- <img src="/pola/4.jpg" alt="" class="pitem" />
-  <img src="/pola/5.jpg" alt="" class="pitem" /> --}}
+  {{!--
+  Hide 1 pola cause it is not divisible by 4.
+  <img src="/pola/16.jpg" alt="" class="pitem" />
+  --}}
+  {{!-- Note: These pola order is upside down!! --}}
   <img src="/pola/6.jpg" alt="" class="pitem" />
   <img src="/pola/3.jpg" alt="" class="pitem"/>
   <img src="/pola/2.jpg" alt="" class="pitem" />
@@ -65,7 +68,7 @@ modal_contents:
   <img src="/pola/10.jpg" alt="" class="pitem" />
   <img src="/pola/35.jpg" alt="" class="pitem"/>
   <img src="/pola/53.jpg" alt="" class="pitem" />
-  <img src="/pola/16.jpg" alt="" class="pitem" />
+  <img src="/pola/4.jpg" alt="" class="pitem" />
   <a href="#menu" class="pitem" data-am-custom-class="ipp-modal" title="">
     <img src="/pola/17.jpg" alt="" />
     <div class="overlay"></div>
@@ -111,7 +114,7 @@ modal_contents:
   <img src="/pola/40.jpg" alt="" class="pitem" />
   <img src="/pola/38.jpg" alt="" class="pitem" />
   <img src="/pola/43.jpg" alt="" class="pitem" />
-  <img src="/pola/39.jpg" alt="" class="pitem" />
+  <img src="/pola/5.jpg" alt="" class="pitem" />
   <a href="#soba" class="pitem" data-am-custom-class="ipp-modal" title="">
     <img src="/pola/27.jpg" alt="" />
     <div class="overlay"></div>
@@ -128,7 +131,8 @@ modal_contents:
   <img src="/pola/55.jpg" alt="" class="pitem" />
   <img src="/pola/46.jpg" alt="" class="pitem" />
   <img src="/pola/36.jpg" alt="" class="pitem" />
-  <img src="/pola/47.jpg" alt="" class="pitem" />
+  <img src="/pola/47.jpg" alt="" class="pitem" /> 
+  {{!--  Note: These pola order is upside down!! --}}
 </div>
 {{#each modal_contents}}
   {{> modal}}
