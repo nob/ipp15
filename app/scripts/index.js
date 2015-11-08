@@ -22,7 +22,6 @@
           if (status == 'open') {
             //put the menu-title back to original state after animation.
             el.children('.menu-title').css('display', 'block');
-            $('.am-modal').css('top', '100px');
           }
         }
       });

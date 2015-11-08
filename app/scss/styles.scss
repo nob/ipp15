@@ -67,12 +67,12 @@ body {
     background-image: url(../images/denim.png) !important;
   }
   .am-modal-content, .ipp-modal-content {
-    padding: 20px 30px 20px;
+    padding: 10px 15px 10px;
     color: #fff;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 26px;
     div[lang=en] {
-      font-size: 20px;
+      font-size: 18px;
       font-family: 'Rancho', cursive;
       h2 {
         font-family: 'Rancho', cursive;
@@ -87,8 +87,24 @@ body {
   }
 }
 .ipp-modal {
-  width: 80%;
-  height: 60%;
+  width: 230px !important;
+  height: 377px !important;
+  .am-expanded.am-back {
+    width: 230px;
+    height: 377px;
+    overflow: hidden;
+  }
+}
+.am-modal.ipp-modal.am-flipped.am-expanded {
+// .am-modal.ipp-modal.am-expanded {
+  overflow: hidden !important;
+  width: 230px !important;
+  height: 377px !important;
+  max-height: 377px !important;
+  position: fixed !important;
+  top: 100px !important;
+  left: 40% !important;
+  margin-left: 0px !important;
 }
 
 .site-wrapper {
