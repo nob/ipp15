@@ -265,12 +265,15 @@
             });
           }
         },{
-          time: 500,
-          step: "am-expanded",
-          selector: $(".am-modal"),
-          beforeAnimate: function() {
-            $(".am-modal").attr("style", "");
-          }
+          /*
+           * Remove card expand and move animation. Customized for Ippuku.
+           */
+          // time: 500,
+          // step: "am-expanded",
+          // selector: $(".am-modal"),
+          // beforeAnimate: function() {
+          //   $(".am-modal").attr("style", "");
+          // }
         },{
           time: 0,
           step: "am-expanded",

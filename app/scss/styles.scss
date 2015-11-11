@@ -95,15 +95,13 @@ body {
     overflow: hidden;
   }
 }
-.am-modal.ipp-modal.am-flipped.am-expanded {
+.am-modal.ipp-modal.am-flipped {
 // .am-modal.ipp-modal.am-expanded {
   overflow: hidden !important;
   width: 230px !important;
   height: 377px !important;
   max-height: 377px !important;
   position: fixed !important;
-  top: 100px !important;
-  left: 40% !important;
   margin-left: 0px !important;
 }
 
