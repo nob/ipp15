@@ -46,6 +46,10 @@ modal_contents:
 <h1>
   <img src="/pola/9.jpg" alt="{{title}}"/>
 </h1>
+<div class="lang-btns">
+  <a href="#" class="btn-en">English</a>
+  <a href="#" class="btn-ja">日本語</a>
+</div>
 <div id="pola_board">
   {{!--
   Hide 1 pola cause it is not divisible by 4.
@@ -61,7 +65,8 @@ modal_contents:
   <a href="#contact" class="pitem" data-am-custom-class="ipp-modal" title="">
     <img src="/pola/1.jpg" alt=""/>
     <div class="overlay"></div>
-    <p class="menu-title">Contact</p>
+    <p class="menu-title" lang="en">Contact</p>
+    <p class="menu-title" lang="ja">お問い合わせ</p>
   </a>
   <img src="/pola/7.jpg" alt="" class="pitem" />
   <img src="/pola/8.jpg" alt="" class="pitem" />
@@ -72,7 +77,8 @@ modal_contents:
   <a href="#menu" class="pitem" data-am-custom-class="ipp-modal" title="">
     <img src="/pola/17.jpg" alt="" />
     <div class="overlay"></div>
-    <p class="menu-title">Menu</p>
+    <p class="menu-title" lang="en">Menu</p>
+    <p class="menu-title" lang="ja">メニュー</p>
   </a>
   <img src="/pola/18.jpg" alt="" class="pitem" />
   <img src="/pola/44.jpg" alt="" class="pitem" />
@@ -82,7 +88,8 @@ modal_contents:
   <a href="#factoids" class="pitem" data-am-custom-class="ipp-modal" title="">
     <img src="/pola/26.jpg" alt="" />
     <div class="overlay"></div>
-    <p class="menu-title">Factoids</p>
+    <p class="menu-title" lang="en">Factoids</p>
+    <p class="menu-title" lang="ja">記事</p>
   </a>
   <img src="/pola/22.jpg" alt="" class="pitem"/>
   <img src="/pola/23.jpg" alt="" class="pitem" />
@@ -94,7 +101,8 @@ modal_contents:
   <a href="#reservations" class="pitem" data-am-custom-class="ipp-modal" title="">
     <img src="/pola/11.jpg" alt="" />
     <div class="overlay"></div>
-    <p class="menu-title">Reservations</p>
+    <p class="menu-title" lang="en">Reservations</p>
+    <p class="menu-title" lang="ja">ご予約</p>
   </a>
   <img src="/pola/31.jpg" alt="" class="pitem" />
   <img src="/pola/32.jpg" alt="" class="pitem" />
@@ -105,7 +113,8 @@ modal_contents:
   <a href="#location" class="pitem" data-am-custom-class="ipp-modal" title="">
     <img src="/pola/12.jpg" alt="" />
     <div class="overlay"></div>
-    <p class="menu-title">Location</p>
+    <p class="menu-title" lang="en">Location</p>
+    <p class="menu-title" lang="ja">手打ちそば 営業時間</p>
   </a>
   <img src="/pola/41.jpg" alt="" class="pitem" />
   <img src="/pola/37.jpg" alt="" class="pitem" />
@@ -118,20 +127,22 @@ modal_contents:
   <a href="#soba" class="pitem" data-am-custom-class="ipp-modal" title="">
     <img src="/pola/27.jpg" alt="" />
     <div class="overlay"></div>
-    <p class="menu-title">Teuchi Soba hours</p>
+    <p class="menu-title" lang="en">Teuchi Soba hours</p>
+    <p class="menu-title" lang="ja">手打ちそば 営業時間</p>
   </a>
   <img src="/pola/45.jpg" alt="" class="pitem" />
   <img src="/pola/50.jpg" alt="" class="pitem" />
   <a href="#yakitori" class="pitem" data-am-custom-class="ipp-modal" title="">
     <img src="/pola/54.jpg" alt=""/>
     <div class="overlay"></div>
-    <p class="menu-title">Yakitori hours</p>
+    <p class="menu-title" lang="en">Yakitori hours</p>
+    <p class="menu-title" lang="ja">焼き鳥 営業時間</p>
   </a>
   <img src="/pola/52.jpg" alt="" class="pitem" />
   <img src="/pola/55.jpg" alt="" class="pitem" />
   <img src="/pola/46.jpg" alt="" class="pitem" />
   <img src="/pola/36.jpg" alt="" class="pitem" />
-  <img src="/pola/47.jpg" alt="" class="pitem" /> 
+  <img src="/pola/47.jpg" alt="" class="pitem" />
   {{!--  Note: These pola order is upside down!! --}}
 </div>
 {{#each modal_contents}}

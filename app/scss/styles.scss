@@ -120,6 +120,13 @@ body {
       width: 100%;
     }
   }
+  .lang-btns {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 101;
+    font-size: 20px;
+  }
   #pola_board {
     width: 800px;
     margin: 0px auto;
@@ -159,6 +166,9 @@ body {
         font-family: 'Permanent Marker', cursive;
         z-index: 3;
       }
+    }
+    *[lang=ja] {
+      display:none;
     }
   }
 }

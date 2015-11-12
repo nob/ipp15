@@ -33,11 +33,24 @@
       });
     }
 
+    //swiching language.
+    $('.btn-en').click(function(){
+        $(this).addClass('active');
+        $(this).parent().find('.btn-ja').removeClass('active');
+        $('*[lang=en]').show();
+        $('*[lang=ja]').hide();
+    });
+    $('.btn-ja').click(function(){
+        $(this).addClass('active');
+        $(this).parent().find('.btn-en').removeClass('active');
+        $('*[lang=ja]').show();
+        $('*[lang=en]').hide();
+    });
     //hover effect which can't handle only css.
     $('a.pitem .menu-title').hover(function(){
-      $(this).prev().css('opacity', '0.7');
+      $(this).parent().find('.overlay').css('opacity', '0.7');
     }, function(){
-      $(this).prev().css('opacity', '0');
+      $(this).parent().find('.overlay').css('opacity', '0');
     });
     $('a.pitem .overlay').hover(function(){
       $(this).css('opacity', '0.7');
