@@ -30,7 +30,10 @@
 }
 
 .am-modal-open {
-  overflow: hidden;
+  /*
+   * Made window scrollable even when modal is opened.
+   */
+  /*overflow: hidden;*/
 }
 
 .am-modal-open .am-overlay {
@@ -38,10 +41,13 @@
 }
 
 .am-modal {
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  /*
+   * Remove card expand and move animation. Customized for Ippuku.
+   */
+  /*-webkit-transition: all 0.5s ease-in-out;*/
+  /*-moz-transition: all 0.5s ease-in-out;*/
+  /*-o-transition: all 0.5s ease-in-out;*/
+  /*transition: all 0.5s ease-in-out;*/
 	-webkit-perspective: 1000;
   -moz-perspective: 1000;
   -o-perspective: 1000;
@@ -73,7 +79,7 @@
   -moz-backface-visibility: hidden !important;
   -o-backface-visibility: hidden !important;
   backface-visibility: hidden !important;
-  
+
 
 	position: absolute !important;
 	top: 0 !important;
