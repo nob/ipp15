@@ -29,8 +29,19 @@
         },
         afterAnimate: function(el, status) {
           if (status == 'open') {
-            //put the menu-title back to original state after animation.
+            //put back language selection to original state after animation.
+            if ($('.btn-ja').hasClass('active')) {
+              $('.am-modal-content *[lang=en]').addClass('lang-inactive');
+            } else if ($('.btn-en').hasClass('active')) {
+              $('.am-modal-content *[lang=ja]').addClass('lang-inactive');
+            }
+          } else {
             el.children('.menu-title').css('display', 'block');
+            if ($('.btn-ja').hasClass('active')) {
+              $('*[lang=en].menu-title').addClass('lang-inactive');
+            } else if ($('.btn-en').hasClass('active')) {
+              $('*[lang=ja].menu-title').addClass('lang-inactive');
+            }
           }
         }
       });
@@ -53,15 +64,21 @@
     $('.btn-en').click(function(){
         $(this).addClass('active');
         $(this).parent().find('.btn-ja').removeClass('active');
-        $('*[lang=en]').show();
-        $('*[lang=ja]').hide();
+        $('*[lang=en]').removeClass('lang-inactive');
+        $('*[lang=ja]').addClass('lang-inactive');
     });
     $('.btn-ja').click(function(){
         $(this).addClass('active');
         $(this).parent().find('.btn-en').removeClass('active');
-        $('*[lang=ja]').show();
-        $('*[lang=en]').hide();
+        $('*[lang=ja]').removeClass('lang-inactive');
+        $('*[lang=en]').addClass('lang-inactive');
     });
+    //Set Default language on initial page load.
+    if ($('.btn-en').hasClass('active')) {
+      $('.btn-en').click();
+    } else {
+      $('.btn-ja').click();
+    }
     //hover effect which can't handle only css.
     $('a.pitem .menu-title').hover(function(){
       $(this).parent().find('.overlay').css('opacity', '0.7');

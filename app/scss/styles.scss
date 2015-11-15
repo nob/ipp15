@@ -43,9 +43,9 @@
       @include rotate(0deg);
   }
 }
-@for $i from 1 through 7 {
+@for $i from 1 through 8 {
   $DELAY: $i * 0.5s;
-  #pola_board a:nth-of-type(#{8 - $i}){
+  #pola_board a:nth-of-type(#{9 - $i}){
   // #pola_board a {
       @include animation(swing 1s ease $DELAY infinite alternate);
   }
@@ -58,6 +58,12 @@ body {
   background-image: url(../images/Melamine-wood-006.png);
   // background-repeat: no-repeat;
   // background-size: 100% 100%;
+}
+//language switch
+*[lang=en], *[lang=ja] {
+  &.lang-inactive {
+    display: none !important;
+  }
 }
 
 //For AdaptiveModal & TwtBootstrap Modal
@@ -164,9 +170,6 @@ body {
         font-family: 'Permanent Marker', cursive;
         z-index: 3;
       }
-    }
-    *[lang=ja] {
-      display:none;
     }
   }
 }
