@@ -1,10 +1,7 @@
 ## Location
 
-We are located at 2130 Center Street (between Shattuck and Oxford) in Berkeley across from the downtown BART station.
+We are located at
+<a href="https://www.google.com/maps/place/2130+Center+Street/@37.8703932,-122.2684869,18z/data=!4m6!1m3!3m2!1s0x0:0xbd2075ab68900052!2s2130+Center+Street!3m1!1s0x0:0xbd2075ab68900052" target="_blank">2130 Center Street (between Shattuck and Oxford) in Berkeley</a> across from the downtown BART station.
 
-### Driving from I-80
-Take University exit to University Ave east bound.
-Turn right on Shattuck and then left on Center.
-Ippuku will be located on the right side of Center Street.
 
-Paid parking is available on the street or in the adjacent B of A lot .
+We encourage you to take public transportation.
