@@ -4,39 +4,45 @@
 //@import "compass";
 
 //Fonts
-@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
-// @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
-@import url(https://fonts.googleapis.com/css?family=Rancho);
+// @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+// @import url(https://fonts.googleapis.com/css?family=Rancho);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @font-face {
-    font-family: Yakitori;
-    src: url(../fonts/hkhigerei.ttf);
+    font-family: 'DF Shin Ten';
+    src: url('../fonts/dfsintenw7.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/dfsintenw7.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/dfsintenw7.woff') format('woff'),
+         url('../fonts/dfsintenw7.ttf') format('truetype');
 }
 
 
 /**
- * Keyframe animation.
+ * Keyframe animation mixin.
  */
 @mixin keyf($animation-name) {
-  @-webkit-keyframes swing {
+  @-webkit-keyframes #{$animation-name} {
     @content;
   }
-  @-moz-keyframes swing {
+  @-moz-keyframes #{$animation-name} {
     @content;
   }
-  @keyframes swing {
+  @keyframes #{$animation-name} {
     @content;
   }
 }
-@mixin animation($animation-name) {
-  -webkit-animation: $animation-name;
-  -moz-animation: $animation-name;
-  animation: $animation-name;
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  animation: $animation;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@include keyf(swing){
+
+/**
+ * Card swing animation
+ */
+@include keyf(swing) {
   0% {
       @include rotate(0deg);
   }
@@ -44,18 +50,15 @@
       @include rotate(-10deg);
   }
   100% {
-      @include rotate(0deg);
+      @include rotate(10deg);
   }
 }
 @for $i from 1 through 8 {
   $DELAY: $i * 0.5s;
   #pola_board a:nth-of-type(#{9 - $i}){
-  // #pola_board a {
       @include animation(swing 1s ease $DELAY infinite alternate);
   }
 }
-
-
 
 body {
   background-color: rgba(0, 0, 0, 0);
@@ -79,19 +82,32 @@ body {
   .am-modal-content, .ipp-modal-content {
     padding: 10px 15px 10px;
     color: #fff;
-    font-size: 14px;
-    line-height: 26px;
+    font-weight: 200;
+    // line-height: 26px;
     div[lang=en] {
-      font-size: 18px;
-      font-family: 'Rancho', cursive;
+      font-size: 17px;
+      // font-family: 'DF Shin Ten', cursive;
+      font-family: 'Noto Sans Japanese', cursive;
       h2 {
-        font-family: 'Rancho', cursive;
+        font-size: 24px;
+        font-weight: bolder;
+        font-family: 'DF Shin Ten', cursive;
       }
     }
     div[lang=ja] {
+      font-size: 16px;
+      font-family: 'Noto Sans Japanese', cursive;
       h2 {
-        font-size: 22px;
-        font-family: 'Noto Sans Japanese', cursive;
+        font-size: 27px;
+        font-family: 'DF Shin Ten', cursive;
+      }
+    }
+    a {
+      color: #BCB8C6;
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
       }
     }
   }
@@ -118,26 +134,56 @@ body {
 .site-wrapper {
   width: 100%;
   h1 {
-    position: absolute;
+    position: fixed;
     @include rotate(-25deg);
     width: 300px;
-    top: -120px;
-    left: -20px;
-    z-index: 100;
+    top: -320px;
+    left: -140px;
+    z-index: 99;
     img {
       width: 100%;
     }
   }
+  a {
+    color: #BCB8C6;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: #fff;
+    }
+  }
   .lang-btns {
-    position: absolute;
-    top: 100px;
-    left: 100px;
+    position: fixed;
+    bottom: 80px;
+    left: 30px;
     z-index: 101;
-    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    a {
+      display: inline-block;
+      margin: 0px 10px;
+      &.btn-en {
+        font-size: 24px;
+        // font-family: 'Permanent Marker', cursive;
+        font-family: 'DF Shin Ten', cursive;
+      }
+      &.btn-ja {
+        font-size: 26px;
+        font-family: 'DF Shin Ten', cursive;
+      }
+      &.active {
+        color: #4682E8;
+        cursor: default;
+        &:hover {
+          color: #4682E8;
+        }
+      }
+    }
   }
   #pola_board {
     width: 800px;
-    margin: 0px auto;
+    margin: 40px auto 130px;
     .pitem {
       @include transform-origin(50% 9%);
       width: 230px;
@@ -166,18 +212,63 @@ body {
       .menu-title {
         margin-bottom: 0px;
         position: absolute;
-        bottom: 60px;
-        left: 10px;
-        @include rotate(-25deg);
-        font-size: 50px;
+        bottom: 15px;
+        left: 5px;
+        @include rotate(-5deg);
+        font-size: 34px;
+        line-height: 36px;
+        letter-spacing: 0px;
         color: #1063E8;
+        text-align: center;
+        width: 100%;
         z-index: 3;
         &[lang=en] {
-          font-family: 'Permanent Marker', cursive;
+          font-size: 37px;
+          font-family: 'DF Shin Ten', cursive;
         }
         &[lang=ja] {
-          // font-family: 'Yakitori', cursive;
+          font-size: 37px;
+          font-family: 'DF Shin Ten', cursive;
         }
+      }
+    }
+  }
+  /*** Flash intro elements ***/
+  #flash-wrap {
+    width: 100%;
+    height: 100%;
+    background-color:#000000;
+    z-index:102;
+    position: fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    #flash {
+      background-color:#000000;
+      width: 700px;
+      height: 394px;
+      margin: 80px auto 0;
+      div#noflash-msg{
+        text-align: left;
+        color: #FFFFFF;
+        overflow: hidden;
+        padding: 100px 200px;
+        display: none;
+        img {
+          float: left;
+          margin: 10px 10px;
+        }
+      }
+    }
+    p {
+      width: 700px;
+      margin: 20px auto;
+      text-align: right;
+      a#enter {
+        font:20px "DF Shin Ten", sans-serif;
+        font-weight: bold;
+        font-size: 28px;
       }
     }
   }

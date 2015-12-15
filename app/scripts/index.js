@@ -1,4 +1,20 @@
 (function($){
+    //load intro flash movie.
+    $('#noflash-msg').show();
+    flashembed("flash", {
+      src: 'intro.swf',
+      bgcolor: '#000000',
+      expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf",
+      onFail: function() {
+        closeFlash();
+      },
+    });
+    //Initialize "Enter" anchor.
+    $('#enter').click(function() {
+      event.preventDefault ? event.preventDefault() : event.returnValue = false;
+      closeFlash();
+    });
+
 
     var $container = $('#pola_board').imagesLoaded( function() {
       // initialize Packery after all images have loaded
@@ -92,6 +108,13 @@
     });
 
 })(window.jQuery);
+
+function closeFlash() {
+  $('#flash').hide();
+  $('#flash-wrap > p').hide();
+  $('#flash-wrap').fadeOut(1500);
+  $('h1').delay(750).animate({ 'left': '+=120px', 'top': '+=200px' }, 400);
+}
 /**
  * Determine the mobile operating system.
  * This function either returns 'iOS', 'Android' or 'unknown'
