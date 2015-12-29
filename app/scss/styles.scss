@@ -86,8 +86,8 @@ body {
     // line-height: 26px;
     div[lang=en] {
       font-size: 17px;
-      // font-family: 'DF Shin Ten', cursive;
-      font-family: 'Noto Sans Japanese', cursive;
+      font-family: 'DF Shin Ten', cursive;
+      // font-family: 'Noto Sans Japanese', cursive;
       h2 {
         font-size: 24px;
         font-weight: bolder;
@@ -137,6 +137,9 @@ body {
     position: fixed;
     @include rotate(-25deg);
     width: 300px;
+    @media screen and (max-width: 414px) {
+      width: 200px;
+    }
     top: -320px;
     left: -140px;
     z-index: 99;
@@ -156,6 +159,10 @@ body {
     position: fixed;
     bottom: 80px;
     left: 30px;
+    @media screen and (max-width: 414px) {
+      bottom: 10px;
+      left: 10px;
+    }
     z-index: 1100;
     padding: 10px 20px;
     border-radius: 10px;
@@ -183,10 +190,22 @@ body {
   }
   #pola_board {
     width: 800px;
+    @media screen and (max-width: 414px) {
+      width: 350px;
+    }
     margin: 40px auto 130px;
+    @media screen and (max-width: 414px) {
+      margin-bottom: 50px;
+    }
     .pitem {
       @include transform-origin(50% 9%);
       width: 230px;
+      @media screen and (max-width: 414px) {
+        width: 120px;
+        &:last-child {
+          display: none;
+        }
+      }
       border: solid 1px grey;
       background-color: rgba(0, 0, 0, 0); //This will become BG color of AdaptiveModal.
       img {
@@ -214,6 +233,10 @@ body {
         position: absolute;
         bottom: 15px;
         left: 5px;
+        @media screen and (max-width: 414px) {
+          bottom: 5px;
+          left: 3px;
+        }
         @include rotate(-5deg);
         font-size: 34px;
         line-height: 36px;
@@ -224,10 +247,16 @@ body {
         z-index: 3;
         &[lang=en] {
           font-size: 37px;
+          @media screen and (max-width: 414px) {
+            font-size: 25px;
+          }
           font-family: 'DF Shin Ten', cursive;
         }
         &[lang=ja] {
           font-size: 37px;
+          @media screen and (max-width: 414px) {
+            font-size: 25px;
+          }
           font-family: 'DF Shin Ten', cursive;
         }
       }
