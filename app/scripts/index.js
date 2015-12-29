@@ -10,7 +10,7 @@
       },
     });
     //Initialize "Enter" anchor.
-    $('#enter').click(function() {
+    $('#enter').click(function(event) {
       event.preventDefault ? event.preventDefault() : event.returnValue = false;
       closeFlash();
     });
@@ -18,9 +18,10 @@
 
     var $container = $('#pola_board').imagesLoaded( function() {
       // initialize Packery after all images have loaded
+      var gtr = (window.innerWidth > 414) ? -40 : -10;
       $container.packery({
         itemSelector: '.pitem',
-        gutter: -40,
+        gutter: gtr,
         "isOriginTop": false
       });
     });
