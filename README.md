@@ -5,9 +5,6 @@ HTML5 + Bootstrap Sass + jQuery application skelton, built with [Brunch](http://
 ## Getting started
 * Install (if you don't have them):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
-      * If you need to have this software first in your PATH run:
-      
-        `echo 'export PATH="/usr/local/opt/node/bin:$PATH"' >> ~/.bash_profile`
     * [Brunch](http://brunch.io): `npm install -g brunch@1.8.5`
     * [Bower](http://bower.io): `npm install -g bower`
     * Brunch plugins and Bower dependencies: `npm install`
