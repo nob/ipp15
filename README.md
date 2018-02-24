@@ -1,16 +1,19 @@
-# Brunch with Bower , Bootstrap(Sass) and jQuery
+# Ippuku Berkeley website (made in 2015)
 
-HTML5 + Bootstrap Sass + jQuery application skelton, built with [Brunch](http://brunch.io)
+HTML5 + Bootstrap Sass + jQuery application, built with [Brunch](http://brunch.io)
 
 ## Getting started
-* Install (if you don't have them):
+* Install via Terminal.app (if you didn't install Node.js & Brunch):
     * [Node.js](http://nodejs.org): `brew install node` on OS X
     * [Brunch](http://brunch.io): `npm install -g brunch@1.8.5`
-    * Brunch plugins and Bower dependencies: `npm install`
-* Run:
+* Install node packages, which are required by Ippuku Berkeley website (if you didn't install them) 
+    * Move to '~/Desktop/ipp15/' directory: `cd ~/Desktop/ipp15` (assuming you have downloaded 'ipp15' directory in your Desktop directory.)
+    * Install node packages into 'node_modules/' directory: `npm install`
+* Build & assemble files in 'app/' directory into public/ directory as finished files:
+    * Move to '~/Desktop/ipp15/' directory: `cd ~/Desktop/ipp15` (assuming you have downloaded 'ipp15' directory in your Desktop directory.)
     * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
     * `brunch build --production` — builds minified project for production
-* Learn:
+## Learn:
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
     * Place styles in `app/scss/` to be compiled to `public/css/app.css`
