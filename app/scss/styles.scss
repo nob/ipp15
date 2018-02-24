@@ -110,14 +110,20 @@ body {
         font-weight: bolder;
         font-family: 'DF Shin Ten', cursive;
       }
+      p.master {
+        font-size: 15px;
+      }
     }
     div[lang=ja] {
       font-size: 16px;
       font-family: 'Noto Sans Japanese', cursive;
       line-height: 26px;
       h2 {
-        font-size: 25px;
+        font-size: 24px;
         font-family: 'DF Shin Ten', cursive;
+      }
+      p.master {
+        font-size: 11px;
       }
     }
     a {
@@ -272,27 +278,38 @@ body {
           &.sprite-about {
             height: 75px;
             // bottom: -5px;
-            background-position: -5px -5px;
+            // background-position: -5px -5px;
+            background-position: -5px -152px; //147
           }
           &.sprite-access {
-            background-position: -5px -153px;
+            // background-position: -5px -153px;
+            background-position: -5px -300px;
           }
           &.sprite-bar {
-            background-position: -5px -279px;
+            // background-position: -5px -279px;
+            background-position: -5px -426px;
           }
           &.sprite-rsvp {
             height: 75px;
             // bottom: -5px;
-            background-position: -5px -405px;
+            // background-position: -5px -405px;
+            background-position: -18px -552px;
           }
           &.sprite-soba {
-            background-position: -5px -575px;
+            //background-position: -5px -575px;
+            background-position: -5px -722px;
           }
           &.sprite-sweets {
-              background-position: -5px -701px;
+            //background-position: -5px -701px;
+            background-position: -5px -848px;
           }
           &.sprite-yakitori {
-              background-position: -5px -827px;
+            //background-position: -5px -827px;
+            background-position: -5px -974px;
+          }
+          &.sprite-master {
+            //background-image: none !important;
+            background-position: -12px -5px;
           }
           @media screen and (max-width: 414px) {
             width: 108px;
@@ -302,27 +319,37 @@ body {
             &.sprite-about {
               height: 49px;
               bottom: -2px;
-              background-position: -5px -5px;
+              // background-position: -5px -5px;
+              background-position: -5px -98px;
             }
             &.sprite-access {
-              background-position: -5px -108px;
+              // background-position: -5px -108px;
+              background-position: -5px -194px;
             }
             &.sprite-bar {
-              background-position: -5px -196px;
+              // background-position: -5px -196px;
+              background-position: -5px -272px;
             }
             &.sprite-rsvp {
               height: 49px;
               bottom: -3px;
-              background-position: -5px -284px;
+              // background-position: -5px -284px;
+              background-position: -5px -350px;
             }
             &.sprite-soba {
-              background-position: -5px -402px;
+              //background-position: -5px -402px;
+              background-position: -5px -465px;
             }
             &.sprite-sweets {
-                background-position: -5px -490px;
+              // background-position: -5px -490px;
+              background-position: -5px -545px;
             }
             &.sprite-yakitori {
-                background-position: -5px -578px;
+              // background-position: -5px -578px;
+              background-position: -5px -625px;
+            }
+            &.sprite-master {
+              background-position: -5px -5px;
             }
           }
         }
@@ -333,27 +360,31 @@ body {
           bottom: 5px;
           left: 25px;
           &.sprite-about {
-            background-position: -5px -90px;
+            background-position: -5px -234px;
           }
           &.sprite-access {
-            background-position: -5px -217px;
+            background-position: -5px -364px;
           }
           &.sprite-bar {
-            background-position: -5px -342px;
+            background-position: -5px -489px;
           }
           &.sprite-rsvp {
             height: 75px;
             bottom: 0px;
-            background-position: -5px -490px;
+            background-position: -5px -637px;
           }
           &.sprite-soba {
-            background-position: -5px -638px;
+            background-position: -9px -785px;
           }
           &.sprite-sweets {
-              background-position: -5px -764px;
+              background-position: -5px -911px;
           }
           &.sprite-yakitori {
-              background-position: -5px -890px;
+              background-position: -5px -1037px;
+          }
+          &.sprite-master {
+            //background-image: none !important;
+            background-position: -5px -84px;
           }
           @media screen and (max-width: 414px) {
             width: 108px;
@@ -361,27 +392,30 @@ body {
             bottom: 0px;
             left: 5px;
             &.sprite-about {
-              background-position: -5px -64px;
-            }
-            &.sprite-access {
               background-position: -5px -152px;
             }
+            &.sprite-access {
+              background-position: -5px -235px;
+            }
             &.sprite-bar {
-              background-position: -5px -240px;
+              background-position: -5px -313px;
             }
             &.sprite-rsvp {
               height: 49px;
               bottom: -5px;
-              background-position: -5px -343px;
+              background-position: -5px -403px;
             }
             &.sprite-soba {
-              background-position: -5px -446px;
+              background-position: -5px -460px;
             }
             &.sprite-sweets {
-                background-position: -5px -534px;
+                background-position: -5px -584px;
             }
             &.sprite-yakitori {
-                background-position: -5px -622px;
+                background-position: -5px -662px;
+            }
+            &.sprite-master {
+              background-position: -5px -5px;
             }
           }
         }
