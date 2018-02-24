@@ -10,6 +10,7 @@ HTML5 + Bootstrap Sass + jQuery application, built with [Brunch](http://brunch.i
 3. Install node packages, which are required by Ippuku Berkeley website (if you didn't install them).
     * Move to '~/Desktop/ipp15/' directory: `cd ~/Desktop/ipp15` (assuming you have downloaded this 'ipp15' directory in your Desktop directory.)
     * Install node packages into 'node_modules/' directory: `npm install`
+    * Confirm node_modules/ directory was newly generated in 'ipp15' directory.
 4. Build & assemble all files under 'app/' directory into 'public/' directory as finished files:
     * Move to '~/Desktop/ipp15/' directory: `cd ~/Desktop/ipp15` (assuming you have downloaded this 'ipp15' directory in your Desktop directory.)
     * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
