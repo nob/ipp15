@@ -18,6 +18,7 @@ HTML5 + Bootstrap Sass + jQuery application, built with [Brunch](http://brunch.i
 
 
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
+    
     * Place static files you want to be copied from `app/assets/` to `public/`.
     * Place styles in `app/scss/` to be compiled to `public/css/app.css`
     * Place javascripts in `app/scripts` to be concatenated to `public/js/app.js`
