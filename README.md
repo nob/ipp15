@@ -4,8 +4,8 @@ HTML5 + Bootstrap Sass + jQuery application, built with [Brunch](http://brunch.i
 
 ## Getting started
 1. Open 'Terminal.app' in your Mac OS
-2. Install via Terminal.app (if you didn't install Node.js & Brunch).:
-    * [Node.js](http://nodejs.org): `brew install node` on OS X
+2. Install Node.js & Brunch via 'Terminal.app' (if you didn't install).:
+    * [Node.js](http://nodejs.org): `brew install node` on Mac OS
     * [Brunch](http://brunch.io): `npm install -g brunch@1.8.5`
 3. Install node packages, which are required by Ippuku Berkeley website (if you didn't install them).
     * Move to '~/Desktop/ipp15/' directory: `cd ~/Desktop/ipp15` (assuming you have downloaded this 'ipp15' directory in your Desktop directory.)
