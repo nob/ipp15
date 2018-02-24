@@ -7,12 +7,12 @@ HTML5 + Bootstrap Sass + jQuery application, built with [Brunch](http://brunch.i
     * [Node.js](http://nodejs.org): `brew install node` on OS X
     * [Brunch](http://brunch.io): `npm install -g brunch@1.8.5`
 * Install node packages, which are required by Ippuku Berkeley website (if you didn't install them) 
-    * Move to '~/Desktop/ipp15/' directory: `cd ~/Desktop/ipp15` (assuming you have downloaded 'ipp15' directory in your Desktop directory.)
+    * Move to '~/Desktop/ipp15/' directory: `cd ~/Desktop/ipp15` (assuming you have downloaded this 'ipp15' directory in your Desktop directory.)
     * Install node packages into 'node_modules/' directory: `npm install`
-* Build & assemble files in 'app/' directory into public/ directory as finished files:
-    * Move to '~/Desktop/ipp15/' directory: `cd ~/Desktop/ipp15` (assuming you have downloaded 'ipp15' directory in your Desktop directory.)
+* Build & assemble files in 'app/' directory into 'public/' directory as finished files:
+    * Move to '~/Desktop/ipp15/' directory: `cd ~/Desktop/ipp15` (assuming you have downloaded this 'ipp15' directory in your Desktop directory.)
     * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
-    * `brunch build --production` — builds minified project for production
+    * `brunch build --production` — builds minified files for production
 ## Learn:
     * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
     * Place static files you want to be copied from `app/assets/` to `public/`.
