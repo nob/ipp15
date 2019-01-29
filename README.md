@@ -21,6 +21,6 @@ HTML5 + Bootstrap Sass + jQuery application, built with [Brunch](http://brunch.i
  * Place styles(.scss files) in `app/scss/` to be compiled to `public/css/app.css`.
  * Place javascript files(.js) in `app/scripts` to be concatenated to `public/js/app.js`.
  * Place Handlebars templates to app/ and they will be automatically compiled and placed in your `public/` directory.
- * Place other files (image files, font files or movies) in `app/assets/` to be copied from  to `public/` directory.
+ * Place other files (image files, font files or movies) in `app/assets/` to be copied to `public/` directory.
  * [Sass site](http://sass-lang.com)
  * [Bootstrap site](http://getbootstrap.com)
