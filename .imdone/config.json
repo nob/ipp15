@@ -18,10 +18,16 @@
       "IDEA",
       "NOTE",
       "REVIEW",
-      "MARK"
+      "MARK",
+      "HELP"
     ]
   },
-  "lists": [],
+  "lists": [
+    {
+      "name": "HELP",
+      "hidden": false
+    }
+  ],
   "marked": {
     "gfm": true,
     "tables": true,
@@ -34,5 +40,6 @@
     "id": "5ab0df17ed4c4c0a964618bd",
     "name": "nob/ipp15",
     "useImdoneioForPriority": true
-  }
+  },
+  "noHelp": true
 }
