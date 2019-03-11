@@ -10,7 +10,6 @@
 5:00pm - 11:00pm
 
 <br>
-ご予約は
-<a href="https://resy.com/cities/sf/ippuku">Resy</a>にて、<br>
-若しくは、お電話で承っております。<br>
+ご予約は[Resy](https://resy.com/cities/sf/ippuku)にて、<br>
+もしくは、お電話で承っております。<br>
 電話番号: <a href="tel:510-665-1969">(510) 665-1969</a>
